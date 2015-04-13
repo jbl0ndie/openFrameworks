@@ -60,7 +60,7 @@ void ofApp::draw(){
     }
     
     //----------------------------------------------------------
-    // HERE the shader-masking happends
+    // HERE the shader-masking happens
     fbo.begin();
     // Cleaning everthing with alpha mask on 0 in order to make it transparent by default
     ofClear(0, 0, 0, 0);
@@ -75,7 +75,7 @@ void ofApp::draw(){
     fbo.end();
     
     //----------------------------------------------------------
-    // FIRST draw the background image
+    // FIRST draw the foreground image
     foregroundImage.draw(0,0);
     
     // THEN draw the masked fbo on top
